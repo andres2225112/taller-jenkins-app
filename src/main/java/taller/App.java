@@ -1,14 +1,14 @@
 package taller;
 
-import com.sun.net.httpserver.HttpExchange;
-import com.sun.net.httpserver.HttpServer;
-
 import java.io.IOException;
 import java.io.OutputStream;
 import java.net.InetSocketAddress;
 import java.nio.charset.StandardCharsets;
 import java.util.HashMap;
 import java.util.Map;
+
+import com.sun.net.httpserver.HttpExchange;
+import com.sun.net.httpserver.HttpServer;
 
 /**
  * App de ejemplo del taller: una API HTTP mínima usando solo el JDK.
@@ -20,7 +20,7 @@ import java.util.Map;
 public class App {
 
     /** Actividad 5: cambiar este valor, hacer push y ver la nueva versión desplegada. */
-    public static final String VERSION = "1.0.0";
+    public static final String VERSION = "2.0.0";
 
     public static HttpServer crearServidor(int puerto) throws IOException {
         HttpServer server = HttpServer.create(new InetSocketAddress(puerto), 0);
